@@ -1,0 +1,7 @@
+content: content.html
+recievers: recievers.csv
+
+from: example@example.com
+password: averysecurepassword
+
+subject: Hello from Mr. Example, {{ name }}!
