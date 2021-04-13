@@ -57,3 +57,6 @@ Note: make sure all the files described above are in the same directory before r
 ## Important Notes
 - Dispatch currently only works with Gmail based accounts
 - Turn on Less Secure Apps on your email before using the app, or if you have two factor authentication on, create an App Password and use that in the configuration file.
+
+## Copyright &copy; 2021 Aarush Gupta
+This code is copyrighted but licensed to the public under the GNU AGPLv3 license and any later versions.
