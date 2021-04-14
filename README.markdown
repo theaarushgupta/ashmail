@@ -5,7 +5,7 @@
 
 ## Overview
 
-Services such as Mailchimp are have advertising in sent emails and aren't afforable for small businesses to use on a regular basis. To combat this, I created Dispatch. Dispatch has the same qualities Mailchimp does -- it can:
+Services such as Mailchimp have advertising in sent emails and aren't afforable for small businesses to use on a regular basis. To combat this, I created Dispatch. Dispatch has the same qualities Mailchimp does -- it can:
 - Send neat html-based messages
 - Have dynamic content within those emails to personalize them
 - Support large emailing lists
