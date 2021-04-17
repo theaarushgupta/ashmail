@@ -1,7 +1,5 @@
-<div align = "center">
-    <h1>Dispatch</h1>
-    Mass-emailing made simple and affordable
-</div>
+# Dispatch
+Mass-emailing made simple and affordable
 
 ## Overview
 
