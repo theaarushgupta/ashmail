@@ -1,13 +1,5 @@
-# AshMail
+# [AshMail](https://ashmail.theaarushgupta.com)
 The Free and Simple Mass Emailing System 
-
-## Overview
-
-Services such as Mailchimp have advertising in sent emails and aren't afforable for small businesses to use on a regular basis. To combat this, I created AshMail. AshMail has the same qualities Mailchimp does -- it can:
-- Send neat html-based messages
-- Have dynamic content within those emails to personalize them
-- Support large emailing lists
-- Do everything with a simple installation and usage
 
 ## Usage
 
