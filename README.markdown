@@ -1,9 +1,9 @@
-# Dispatch
+# AshMail
 Mass-emailing made simple and affordable
 
 ## Overview
 
-Services such as Mailchimp have advertising in sent emails and aren't afforable for small businesses to use on a regular basis. To combat this, I created Dispatch. Dispatch has the same qualities Mailchimp does -- it can:
+Services such as Mailchimp have advertising in sent emails and aren't afforable for small businesses to use on a regular basis. To combat this, I created AshMail. AshMail has the same qualities Mailchimp does -- it can:
 - Send neat html-based messages
 - Have dynamic content within those emails to personalize them
 - Support large emailing lists
@@ -40,20 +40,20 @@ name,email
 Mr. Example,example@example.com
 ```
 
-### Running Dispatch
+### Running AshMail
 
-#### If this is the first time running dispatch on your computer
+#### If this is the first time running AshMail on your computer
 - Clone the repository with `git` or download the source code
 - Go into the directory with the code
 - Run `python3 setup.py install`
 - Installation Complete!
 
-#### Continued from last steps or already installed dispatch
-- `dispatch <configuration>` where `<configuration>` is the filename of the configuration yaml file
+#### Continued from last steps or already installed AshMail
+- `ashmail <configuration>` where `<configuration>` is the filename of the configuration yaml file
 Note: make sure all the files described above are in the same directory before running the script.
 
 ## Important Notes
-- Dispatch currently only works with Gmail based accounts
+- AshMail currently only works with Gmail based accounts
 - Turn on Less Secure Apps on your email before using the app, or if you have two factor authentication on, create an App Password and use that in the configuration file.
 
 ## Copyright &copy; 2021 Aarush Gupta

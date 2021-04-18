@@ -3,9 +3,9 @@ from csv import reader
 from jinja2 import Template
 from argparse import ArgumentParser
 
-from dispatch.send import Send
+from ashmail.send import Send
 
-class Dispatch:
+class AshMail:
     def __init__(self, configuration: dict, content: str, recieversFile: str) -> None:
         with open(content) as content:
             content = content.read()
@@ -28,7 +28,7 @@ class Dispatch:
         parsedSubject = template.render(name = name, subject = subject)
         self.configuration["subject"] = parsedSubject
 
-    def dispatch(self) -> None:
+    def run(self) -> None:
         for name in self.recievers:
             email = self.recievers[name]
             content = self.template.render(name = name, email = email)
@@ -48,7 +48,7 @@ class Dispatch:
 
 def retrieveConfigurationFile() -> str:
     argumentParser = ArgumentParser(
-        prog = "dispatch",
+        prog = "ashmail",
         description = "mass-emailing made simple and affordable"
     )
     argumentParser.add_argument("configuration", help = "the name of the configuration file")
@@ -61,5 +61,5 @@ def main() -> None:
         configuration = safe_load(configuration)
     content = configuration["content"]
     recievers = configuration["recievers"]
-    dispatch = Dispatch(configuration, content, recievers)
-    dispatch.dispatch()
+    ashmail = AshMail(configuration, content, recievers)
+    ashmail.run()
