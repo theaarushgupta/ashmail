@@ -1,5 +1,5 @@
 # AshMail
-Mass-emailing made simple and affordable
+The Free and Simple Mass Emailing System 
 
 ## Overview
 
