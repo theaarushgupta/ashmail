@@ -5,6 +5,8 @@ from argparse import ArgumentParser
 
 from ashmail.send import Send
 
+from smtplib import SMTPAuthenticationError
+
 class AshMail:
     def __init__(self, configuration: dict, content: str, recieversFile: str) -> None:
         with open(content) as content:
@@ -45,21 +47,34 @@ class AshMail:
                 content
             )
             send.send()
+            print(f"[INFO] Successfully sent email to {name} ({email})")
 
 def retrieveConfigurationFile() -> str:
     argumentParser = ArgumentParser(
         prog = "ashmail",
-        description = "mass-emailing made simple and affordable"
+        description = "the free and simple mass emailing system"
     )
     argumentParser.add_argument("configuration", help = "the name of the configuration file")
     arguments = argumentParser.parse_args()
     return arguments.configuration
 
 def main() -> None:
-    configuration = retrieveConfigurationFile()
-    with open(configuration) as configuration:
-        configuration = safe_load(configuration)
-    content = configuration["content"]
-    recievers = configuration["recievers"]
-    ashmail = AshMail(configuration, content, recievers)
-    ashmail.run()
+    try:
+        configuration = retrieveConfigurationFile()
+        with open(configuration) as configuration:
+            configuration = safe_load(configuration)
+        print("AshMail - The Free and Simple Mass Emailing System")
+        content = configuration["content"]
+        recievers = configuration["recievers"]
+        ashmail = AshMail(configuration, content, recievers)
+        ashmail.run()
+    except FileNotFoundError:
+        print("[ERROR] File Not Found")
+        print(" Check the command-line arguments and configuration file for spelling errors.")
+    except SMTPAuthenticationError:
+        print("[ERROR] Gmail credentials not accepted by servers.")
+        print(" This may be caused if you are not using an App Password or if Less-Secure Apps is disabled.")
+    except Exception as exception:
+        print(f"[ERROR] An error occured: {str(exception)}")
+        print(" Please open an issue at https://github.com/ashmail/ashmail to alert the developers.")
+        print(" Include all the files and state any modifications to the code made.")
