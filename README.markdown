@@ -35,16 +35,17 @@ Mr. Example,example@example.com
 ### Running AshMail
 
 #### If this is the first time running AshMail on your computer
-- Clone the repository with `git` or download the source code
-- Go into the directory with the code
-- Run `python3 setup.py install`
-- Installation Complete!
+1. Clone the repository with `git` or download the source code
+2. Go into the directory with the code
+3. Run `python3 setup.py install`
+4. Installation Complete!
 
 #### Continued from last steps or already installed AshMail
-- `ashmail <configuration>` where `<configuration>` is the filename of the configuration yaml file
-Note: make sure all the files described above are in the same directory before running the script.
+1. `ashmail <configuration>` where `<configuration>` is the filename of the configuration yaml file
+    - Note: make sure all the files described above are in the same directory before running the script.
 
 ## Important Notes
+- **View [this repository](https://github.com/ashmail/onboarding-api) to see and API to onboard and allow users to sign up for your mailing list**
 - AshMail currently only works with Gmail based accounts
 - Turn on Less Secure Apps on your email before using the app, or if you have two factor authentication on, create an App Password and use that in the configuration file.
 
