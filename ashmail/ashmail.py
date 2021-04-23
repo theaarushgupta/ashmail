@@ -72,7 +72,6 @@ def main() -> None:
             email = ashmail.recievers[name]
             email = email.replace(" ", "")
             thread = Thread(target = ashmail.run, args = (name, email))
-            thread.daemon = True
             thread.start()
     except FileNotFoundError:
         print("[ERROR] File Not Found")
