@@ -7,6 +7,7 @@ The Free and Simple Mass Emailing System
 - `config.yml` - the configuration file
 - `content.html` - the html content of the email with variables inside squiggled brackets
 - `recievers.csv` - a file with names and emails
+
 Note: all of these files with some example data can be found in the `_tests_/` directory
 
 ### Data required in files
