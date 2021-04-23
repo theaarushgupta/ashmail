@@ -3,6 +3,7 @@ from csv import reader
 from jinja2 import Template
 from argparse import ArgumentParser
 from threading import Thread
+from sys import exit
 
 from ashmail.send import Send
 
@@ -79,6 +80,9 @@ def main() -> None:
     except SMTPAuthenticationError:
         print("[ERROR] Gmail credentials not accepted by servers.")
         print(" This may be caused if you are not using an App Password or if Less-Secure Apps is disabled.")
+    except KeyboardInterrupt:
+        print("[ERROR] Keyboard Interrupt")
+        exit(1)
     except Exception as exception:
         print(f"[ERROR] An error occured: {str(exception)}")
         print(" Please open an issue at https://github.com/ashmail/ashmail to alert the developers.")
