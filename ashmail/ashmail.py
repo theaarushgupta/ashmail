@@ -7,7 +7,7 @@ from sys import exit
 
 from ashmail.send import Send
 
-from smtplib import SMTPAuthenticationError
+from smtplib import SMTPAuthenticationError, SMTPDataError, SMTPServerDisconnected
 
 class AshMail:
     def __init__(self, configuration: dict, content: str, recieversFile: str) -> None:
@@ -79,10 +79,13 @@ def main() -> None:
     except SMTPAuthenticationError:
         print("[ERROR] Gmail credentials not accepted by servers.")
         print(" This may be caused if you are not using an App Password or if Less-Secure Apps is disabled.")
+    except (SMTPDataError, SMTPServerDisconnected):
+        print("[ERROR] Gmail servers blocked message due to too many attempts for spam prevention.")
+        print(" Please try again later.")
     except KeyboardInterrupt:
         print("[ERROR] Keyboard Interrupt")
         exit(1)
     except Exception as exception:
-        print(f"[ERROR] An error occured: {str(exception)}")
+        print(f"[ERROR] An error occured: \"{str(exception)}\"")
         print(" Please open an issue at https://github.com/ashmail/ashmail to alert the developers.")
         print(" Include all the files and state any modifications to the code made.")
