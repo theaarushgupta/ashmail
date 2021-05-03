@@ -1,5 +1,7 @@
-# [AshMail](https://ashmail.theaarushgupta.com)
+# AshMail
 The Free and Simple Mass Emailing System 
+
+On version: `v2.1.0`
 
 ## Usage
 
@@ -46,7 +48,6 @@ Mr. Example,example@example.com
     - Note: make sure all the files described above are in the same directory before running the script.
 
 ## Important Notes
-- **View [this repository](https://github.com/ashmail/onboarding-api) to see and API to onboard and allow users to sign up for your mailing list**
 - AshMail currently only works with Gmail based accounts
 - Turn on Less Secure Apps on your email before using the app, or if you have two factor authentication on, create an App Password and use that in the configuration file.
 
