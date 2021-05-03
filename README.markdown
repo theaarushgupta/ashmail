@@ -1,4 +1,4 @@
-# AshMail
+# [AshMail](https://pypi.org/project/ashmail/)
 The Free and Simple Mass Emailing System 
 
 On version: `v2.1.0`
@@ -38,10 +38,7 @@ Mr. Example,example@example.com
 ### Running AshMail
 
 #### If this is the first time running AshMail on your computer
-1. Clone the repository with `git` or download the source code
-2. Go into the directory with the code
-3. Run `python3 setup.py install`
-4. Installation Complete!
+1. Install the library with `pip3 install ashmail`. The PyPI page is [here](https://pypi.org/project/ashmail/)
 
 #### Continued from last steps or already installed AshMail
 1. `ashmail <configuration>` where `<configuration>` is the filename of the configuration yaml file
