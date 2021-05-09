@@ -1,5 +1,5 @@
 # [AshMail](https://pypi.org/project/ashmail/)
-The Free and Simple Mass Emailing System 
+The free and simple mass emailing system 
 
 On version: `v2.1.0`
 
