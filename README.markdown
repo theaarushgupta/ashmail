@@ -2,13 +2,13 @@
     <a href = "https://opensource.org/licenses/MIT">
         <img alt = "License" src = "https://img.shields.io/badge/License-AGPLv3-green.svg">
     </a>
-    <a href = "https://pypi.org/project/discord-ext-dashboard/">
+    <a href = "https://pypi.org/project/ashmail/">
         <img alt = "Version" src = "https://img.shields.io/pypi/v/ashmail.svg">
     </a>
-    <a href = "https://pypi.org/project/discord-ext-dashboard/">
+    <a href = "https://pypi.org/project/ashmail/">
         <img alt = "Downloads" src = "https://img.shields.io/pypi/dm/ashmail.svg">
     </a>
-    <a href = "https://pypi.org/project/discord-ext-dashboard/">
+    <a href = "https://pypi.org/project/ashmail/">
         <img alt = "Supported Versions" src = "https://img.shields.io/pypi/pyversions/ashmail.svg">
     </a>
 </p>
