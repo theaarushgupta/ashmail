@@ -1,7 +1,20 @@
-# [AshMail](https://pypi.org/project/ashmail/)
-The free and simple mass emailing system 
+<p align = "center">
+    <a href = "https://opensource.org/licenses/MIT">
+        <img alt = "License" src = "https://img.shields.io/badge/License-AGPLv3-green.svg">
+    </a>
+    <a href = "https://pypi.org/project/discord-ext-dashboard/">
+        <img alt = "Version" src = "https://img.shields.io/pypi/v/ashmail.svg">
+    </a>
+    <a href = "https://pypi.org/project/discord-ext-dashboard/">
+        <img alt = "Downloads" src = "https://img.shields.io/pypi/dm/ashmail.svg">
+    </a>
+    <a href = "https://pypi.org/project/discord-ext-dashboard/">
+        <img alt = "Supported Versions" src = "https://img.shields.io/pypi/pyversions/ashmail.svg">
+    </a>
+</p>
 
-On version: `v2.1.0`
+<h1 align = "center"><a href = "https://pypi.org/project/ashmail/">AshMail <code>v2.1.0</code></a></h1>
+<h3 align = "center">The free and simple mass emailing system </h3>
 
 ## Usage
 
