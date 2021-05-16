@@ -6,7 +6,7 @@ readme = (codeDirectory / "README.markdown").read_text()
 
 setup(
     name = "ashmail",
-    version = "v2.1.1",
+    version = "v2.1.2",
     description = "the free and simple mass emailing system",
     long_description = readme,
     long_description_content_type = "text/markdown",

@@ -13,7 +13,7 @@
     </a>
 </p>
 
-<h1 align = "center"><a href = "https://pypi.org/project/ashmail/">AshMail <code>v2.1.0</code></a></h1>
+<h1 align = "center"><a href = "https://pypi.org/project/ashmail/">AshMail <code>v2.1.2</code></a></h1>
 <h3 align = "center">The free and simple mass emailing system </h3>
 
 ## Usage
